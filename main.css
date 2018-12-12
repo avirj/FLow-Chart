@@ -1,0 +1,395 @@
+.left-bar
+{
+width:6%;
+height:545px;
+background-color:white;
+border:2px solid black;
+padding:20px;
+
+}
+.display-area
+{
+width:72%;
+border:2px solid black;
+margin-left:15px;
+height:585px;
+}
+.content-area
+{
+display:flex;
+width:100%;
+height:630px;
+padding:20px;
+}
+
+
+/*========================================================left-side-elements-size&look============================================================*/
+.selected-circle{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    border:2px dashed #ff4d4d;
+    display: none;
+    z-index:99;
+}
+.selected-diamond
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border: 2px dashed #ff4d4d;
+    transform: rotate(-45deg);
+    display: none;
+    z-index:99;
+}
+.selected-cylinder
+{
+    width: 85px;
+    height: 54px;
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    border:2px dashed #ff4d4d;
+    display: none;
+    z-index:99;
+}
+.selected-rectangle
+{
+    width: 86px;
+    height: 56px;
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    border:2px dashed #ff4d4d;
+    display: none;
+    z-index:99;
+}
+.inn-circle
+{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: #92aec7;
+    
+   
+    
+}
+.inn-rect
+{
+    width: 64px;
+    height:34px;
+    position:absolute;
+    left:6px;
+    top:6px;
+  background-color: #92aec7;
+ 
+}
+.inn-square
+{
+    width:64px;
+    height:64px;
+    position:absolute;
+  background-color: #92aec7;
+    top:6px;
+    left:6px;
+   
+}
+.inn-diamond
+{
+    width:54px;
+    height:54px;
+    position:absolute;
+  background-color: #92aec7;
+    top:5px;
+    left:5px;
+   
+}
+.inn-cylinder
+{
+    width: 64px;
+    height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #92aec7;
+    top: 6px;
+    left: 6px;
+   
+}
+
+.circle-shape
+{
+    width: 76px;
+    height: 76px;
+	cursor: pointer;
+    border-radius: 100%;
+    background-color:  #eae8e8;
+    position: relative;
+    
+}
+
+.rectangle-shape
+{
+    width: 76px;
+	cursor: pointer;
+    height: 46px;
+     background-color:  #eae8e8;
+    position:relative;
+	}
+	
+.triangle-shape{
+
+    width:64px;
+    cursor: pointer;
+    height: 64px;
+    background-color:  #eae8e8;
+    transform: rotate(45deg);
+    position:relative;
+        
+}
+.cylinder-shape
+{
+    width: 76px;
+    cursor: pointer;
+    height: 46px;
+    border-radius: 50%;
+     background-color:  #eae8e8;
+    position: relative;
+}
+.square-shape{
+    width: 76px;
+	cursor: pointer;
+    height: 76px;
+     background-color:  #eae8e8;
+    position:relative;
+}
+.circle,.rectangle,.triangle,.cylinder,.square
+{
+width:100%;
+padding:24px 0px;
+text-align:center;
+text-align:-webkit-center;
+}
+.value{z-index:1;}
+.value:hover
+ {
+    background-color: #c7c5c5;
+ }
+
+.text-box
+{
+     background-color:  #eae8e8;
+    border: none;
+    outline: none;
+    width: 86%;
+    margin: 15px 0px;
+    font-size:12px;
+    vertical-align: middle;
+    text-align: center;
+}
+.rotate-center
+{
+    transform: rotate(-45deg);
+   margin-left:-14px!important;
+}
+
+.edit
+{
+    position: absolute;
+    left: 2px;
+    border: none;
+    background: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.edit:hover{
+    background: aliceblue;
+}
+.delete
+{
+    position: absolute;
+    right: 2px;
+    border: none;
+    background:none;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.delete:hover{
+    background: aliceblue;
+}
+.drag
+{
+text-align: center;
+}
+
+/*========================================================left-side-elements-size&look============================================================*/
+
+
+/*========================================================right-side-properties block==============================================================*/
+
+.properties
+{
+    border: 2px solid;
+    width: 12%;
+    margin-left: 16px;
+    height: 540px;
+    display:none;
+}
+.properties-box
+{
+    height: 80%;
+}
+.title-box
+{
+    padding: 4px 12px;
+    border-bottom: 1px solid;
+    background-color: #c9cacc;
+}
+h4{
+    margin:0px;
+}
+ul 
+{
+    list-style: none;
+    margin: 0px 0px;
+    padding: 10px 0px;
+}
+li 
+{
+    padding:8px;
+}
+.input-box
+{
+    width:96%;
+}
+.button-box
+{
+    display: grid;
+    padding: 4px 8px;
+}
+.name
+{
+    text-align: center;
+    padding: 3px;
+   
+}
+input
+{
+    width: 100%;
+    
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    /* background-color: #92aec7; */
+    vertical-align: middle;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    cursor: move;
+    display: block;
+    white-space: nowrap;
+    word-break: break-word;
+    text-overflow: ellipsis;
+}
+.drag{
+    cursor: move;
+}
+p
+{
+    cursor:pointer;
+}
+.jtk-overlay
+{
+    background: white;
+
+
+}
+.jtk-overlay:hover{
+    color:red;
+}
+path
+{
+   
+    stroke-width:3px;
+    cursor:pointer;
+}
+path:hover{stroke:red;}
+.prompt-box
+{
+    width:200px;
+    height:118px;
+    position: absolute;
+    top:40%;
+    left:40%;
+    box-shadow:0px 3px 4px 0px grey;
+    display: none;
+    background-color: #c5ced6;
+    z-index: 99;
+}
+.head-prompt
+{
+    height:18px;
+    border-bottom: 2px solid;
+    padding:3px;
+}
+.prompt-close
+{
+    float:right;
+    border:none;
+    outline:none;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 0px grey;
+    width:22px;
+    height:16px;
+    
+}
+.prompt-input
+{
+    box-shadow: 0px 1px 2px 0px grey;
+    border-radius: 2px;
+    height: 20px;
+    cursor: text;
+    margin-top:3px;
+    
+}
+.content-prompt
+{
+    padding: 6px 7px 10px 6px;
+}
+.style-button
+{
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 0px grey;
+}
+.jtk-connector
+{
+    
+}
+.ui-resizable-handle
+{
+    width:10px;
+    cursor:resize;
+    height:10px;
+    background-color:rosybrown;
+}
+.ui-resizable-handle:hover{
+    background-color:grey; 
+} 
+.ui-resizable-se
+{
+position: absolute;
+bottom:0px;
+right:0px;
+cursor: se-resize;
+}
+/*========================================================right-side-properties block==============================================================*/
+
+.r{width:20px;height:39px;background-color:black; position: absolute;}

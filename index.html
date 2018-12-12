@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <div class="content-area">
+    <div class="left-bar">
+      <div class="circle">
+        <div class="circle-shape draggable" name="circle">
+          <div class="inn-circle drag">
+            <p></p>
+            <div class="selected-circle box" id="resizable">
+              <div class="buttons">
+                <button class="edit" onclick="edit(this)">!</button>
+                <button class="delete" onclick="deletenode(this)">x</button>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="rectangle">
+        <div class="rectangle-shape draggable" name="rectangle">
+          <div class="inn-rect drag">
+            <p></p>
+            <div class="selected-rectangle box">
+              <div class="buttons">
+                <button class="edit" onclick="edit(this)">!</button>
+                <button class="delete" onclick="deletenode(this)">x</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="triangle">
+        <div class="triangle-shape draggable" name="diamond">
+          <div class="inn-diamond drag">
+            <p style="transform: rotate(-45deg);"></p>
+            <div class="selected-diamond box">
+              <div class="buttons">
+                <button class="edit" onclick="edit(this)">!</button>
+                <button class="delete" onclick="deletenode(this)">x</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cylinder">
+        <div class="cylinder-shape draggable" name="cylinder">
+          <div class="inn-cylinder drag">
+            <p></p>
+            <div class="selected-cylinder box">
+              <div class="buttons">
+                <button class="edit" onclick="edit(this)">!</button>
+                <button class="delete" onclick="deletenode(this)">x</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="square">
+        <div class="square-shape draggable" name="square">
+          <div class="inn-square drag">
+            <p></p>
+            <div class="selected-circle box">
+              <div class="buttons">
+                <button class="edit" onclick="edit(this)">!</button>
+                <button class="delete" onclick="deletenode(this)">x</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="display-area" id="droppable" style="position: relative; overflow:scroll;">
+      <div class="prompt-box" id="promptbox">
+        <div class="head-prompt"><input type="text" id="idquerry" style="width:40px; display:none;" diabled/><button class="prompt-close" onclick=hide(this.parentNode);>X</button></div>
+        <div class="content-prompt">
+          <div style="height: 58px;">Label:<input class="prompt-input" type="text" id="promptinput" /></div>
+          <div><button class="style-button" id="promptdelete">Delete</button>
+            <button style="float:right;" class="style-button" id="promptsave">Save</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="properties" id="properties">
+      <div class="title-box">
+        <h4>Properties</h4>
+      </div>
+      <div class="properties-box">
+        <ul>
+          <li><input type="text" id="prop-id" value="" class="input-box" style="display:block;" /></li>
+          <li>Name:<input type="text" id="name" value="" class="input-box" /></li>
+          <li>Width:<input type="text" id="width" value="" class="input-box" /></li>
+          <li>Height:<input type="text" id="height" value="" class="input-box" /></li>
+          <li>Shape:<input type="text" id="shape" value="" class="input-box" disabled /></li>
+
+        </ul>
+      </div>
+      <div class="button-box">
+        <button style="margin-bottom: 4px;" onclick="update();">Apply</button>
+        <button style="margin-bottom: 4px;" onclick="hide();">Cancel</button>
+        <button style="margin-bottom: 4px;" onclick="remove();">Remove</button>
+      </div>
+    </div>
+
+  <div><button onclick="SaveTheView()">Save</button></div>
+  </div>
+  <div id="dialogoverlay"></div>
+
+  <!-- <script src="jquery-3.3.1.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.8.4/js/jsplumb.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.8.4/js/jsplumb.js"></script> -->
+  <script src="./custom.js"></script>
+</body>
+
+</html>
